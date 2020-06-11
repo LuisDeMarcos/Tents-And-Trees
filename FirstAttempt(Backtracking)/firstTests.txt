@@ -1,0 +1,25 @@
+[[2 3 3 3 3 3 1]
+ [1 2 1 3 2 3 2]
+ [3 3 3 3 1 3 1]
+ [3 2 3 3 3 3 2]
+ [3 1 3 3 3 3 3]
+ [3 2 3 1 2 1 2]
+ [3 1 3 3 3 3 3]]
+
+Total Time: 6.09863
+checkIfSolved Time: 0.118, 1.9375485545293165%
+isValid Time: 0.379, 6.215%
+isGrass Time: 0.000, 0.000%
+setGrass Time: 0.000, 0.001%
+fillGrass Time: 0.000, 0.000%
+noTentNeighbor Time: 4.112, 67.422%
+placeTents Time: 1.490, 24.424%
+
+- Notes:
+As seen, the program solves the puzzle correctly, but the noTentNeighbor function takes up a lot of time
+based on the number of times it is called.
+The time needed to compute the problem is around e^(5x), making it not viable to compute for x > 7.
+Two options to consider for a second attempt:
+1. Try to optimize the backtracking algorithm
+2. Try a new approach based on what a human would do to try to solve the puzzle. This approach can
+  be considered since the player can always check a square with guarantee it is correct.
