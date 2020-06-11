@@ -17,8 +17,8 @@ placeTents Time: 1.490, 24.424%
 
 - Notes:
 As seen, the program solves the puzzle correctly, but the noTentNeighbor function takes up a lot of time
-based on the number of times it is called.
-The time needed to compute the problem is around e^(5x), making it not viable to compute for x > 7.
+due to the number of times it is called.
+The time needed to compute the problem is around e^(5x) (or worse), making it not viable to compute for x > 7. As an example, if x = 8, it would take at least 10 minutes to compute using one processor.
 Two options to consider for a second attempt:
 1. Try to optimize the backtracking algorithm
 2. Try a new approach based on what a human would do to try to solve the puzzle. This approach can
